@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  width: 100vw;
+  height: 80vh;
+  background-color: cadetblue;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+header h1 {
+  font-family: cursive;
+  font-style: italic;
+  color: gold;
+  font-size: 30px;
+}
+
+
+.nav {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+}
+
+.top-content {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.top-content h2 {
+  font-size: 35px;
+  font-style: italic;
+}
+
+.top-content h1 {
+  font-size: 80px;
+  margin-top: 0;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  background-color: gold;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottom h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+.bottom p {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    margin-top: 0;
+    background-color: #2e2e2d;
+    height: 75px;
+  }
+
+  header h1 {
+    margin-left: 2%;
+    font-size: 25px;
+  }
+
+  .menu-button {
+    display: inline;
+    width: 80px;
+    height: 40px;
+    margin-right: 4%;
+    font-size: 20px;
+  }
+
+  .drop-down {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2d;
+  }
+
+  .drop-down p {
+    margin-left: 2%;
+    margin-bottom: 2px;
+  }
+  
+  .top-content {
+    width: 95%;
+    height: 60%;
+    text-align: center;
+  }
+
+  .top-content button {
+    width: 200px;
+    height: 70px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+}
