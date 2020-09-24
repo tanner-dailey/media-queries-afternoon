@@ -13,7 +13,8 @@ body {
 .top {
   width: 100vw;
   height: 80vh;
-  background-color: cadetblue;
+  background-image: url(./images/gadgets-336635__340.jpg);
+  background-size: cover;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -135,6 +136,65 @@ button {
     width: 95%;
     height: 60%;
     text-align: center;
+  }
+
+  .top-content button {
+    width: 200px;
+    height: 70px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 375px) {
+  header {
+    justify-content: space-between;
+    margin-top: 0;
+    background-color: #2e2e2d;
+    height: 75px;
+  }
+
+  header h1 {
+    margin-left: 4%;
+    font-size: 20px;
+  }
+
+  .menu-button {
+    display: inline;
+    width: 80px;
+    height: 40px;
+    margin-right: 4%;
+    font-size: 20px;
+  }
+
+  .drop-down {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2e2e2d;
+  }
+
+  .drop-down p {
+    margin-left: 2%;
+    margin-bottom: 0;
+  }
+  
+  .top-content {
+    width: 95%;
+    height: 60%;
+    text-align: center;
+  }
+
+  .top-content h1 {
+    font-size: 50px;
+  }
+
+  .top-content h2 {
+    font-size: 25px;
   }
 
   .top-content button {
